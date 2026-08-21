@@ -28,18 +28,3 @@ function showToast(message) {
     toast.className = "toast-notification show";
     setTimeout(() => { toast.className = toast.className.replace("show", ""); }, 3000);
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    const sectionObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('muncul');
-            }
-        });
-    }, { threshold: 0.1 }); // Munculin saat 10% area section terlihat
-
-    // Terapin ke semua tag <section> di HTML
-    document.querySelectorAll('section').forEach((sec) => {
-        sectionObserver.observe(sec);
-    });
-});
