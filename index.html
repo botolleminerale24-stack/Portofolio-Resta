@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Profesional | Resta Onistriya Widya Inar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar dengan efek Glassmorphism -->
+    <header class="glass-nav">
+        <nav class="container">
+            <div class="logo">
+                <span class="text-blue">Resta</span><span class="text-pink">.</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-item">Tentang</a></li>
+                <li><a href="#education" class="nav-item">Pendidikan</a></li>
+                <li><a href="#certification" class="nav-item">Sertifikasi</a></li>
+                <li><a href="#experience" class="nav-item">Pengalaman</a></li>
+                <li><a href="#organization" class="nav-item">Organisasi</a></li>
+                <li><a href="#contact" class="nav-item btn-nav">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section pattern-bg">
+        <div class="container hero-content hidden-element">
+            <h1 class="hero-title">Resta Onistriya <br><span class="text-pink">Widya Inar</span></h1>
+            <h2 class="hero-subtitle">Lulusan S1 Akuntansi & Teknisi Perpajakan Madya</h2>
+            <p class="hero-desc">Memiliki keahlian mendalam dalam penyusunan laporan keuangan, penjurnalan transaksi, pengelolaan petty cash, serta regulasi perpajakan (PPh & PPN).</p>
+            <div class="cta-group">
+                <a href="#about" class="btn btn-primary">Eksplorasi Portofolio <i class="fas fa-arrow-right"></i></a>
+                <a href="#contact" class="btn btn-secondary"><i class="fas fa-envelope"></i> Hubungi Saya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (DENGAN FOTO PROFIL) -->
+    <section id="about" class="section">
+        <div class="container layout-grid-about">
+            <!-- Tempat Foto Profil -->
+            <div class="about-image-wrapper hidden-element">
+                <!-- Pastikan foto profil bernama profil.jpg ditaruh di folder img -->
+                <img src="img/Foto Profil.jpg" alt="Foto Resta" class="profile-img" onerror="this.src='https://via.placeholder.com/400x500/1e3799/ffffff?text=Taruh+profil.jpg+di+folder+img'">
+                <div class="image-backdrop"></div>
+            </div>
+
+            <div class="about-text hidden-element delay-1">
+                <h3 class="section-heading">Tentang <span class="text-blue">Saya</span></h3>
+                <p>Saya adalah lulusan S1 Akuntansi Universitas Swadaya Gunung Jati (UGJ), berusia 21 tahun, memahami penyusunan laporan keuangan, penjurnalan transaksi, pengelolaan petty cash, serta perpajakan meliputi PPh Pasal 21, PPh Pasal 23, PPh Pasal 22 Impor, PPN, dan PPh Badan. Terbiasa melakukan pemeriksaan invoice, pencatatan dan penjurnalan transaksi, memproses pembayaran kepada vendor, serta memastikan kelengkapan dokumen pendukung transaksi. Teliti, bertanggung jawab, cepat belajar, serta mampu bekerja mandiri maupun dalam tim untuk memberikan kontribusi positif di lingkungan kerja.</p>
+                <p>Karakteristik profesional saya meliputi ketelitian tingkat tinggi, rasa tanggung jawab, kemampuan belajar yang cepat, dan fleksibilitas untuk bekerja secara mandiri maupun kolaboratif dalam tim.</p>
+                
+                <div class="about-stats mt-2">
+                    <div class="stat-box box-blue">
+                        <i class="fas fa-calculator stat-icon"></i>
+                        <h4>Akuntansi & Keuangan</h4>
+                        <p>Penjurnalan, Laporan Keuangan, Petty Cash</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section (Dipisah) -->
+    <section id="education" class="section bg-light">
+        <div class="container">
+            <h3 class="section-heading text-center hidden-element">Latar Belakang <span class="text-blue">Pendidikan</span></h3>
+            
+            <div class="education-card hidden-element">
+                <div class="edu-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <div class="edu-content">
+                    <h4 style="font-size: 1.5rem; color: var(--clr-blue); margin-bottom: 0.5rem;">Universitas Swadaya Gunung Jati (UGJ)</h4>
+                    <span class="badge">2022 - 2026</span>
+                    <h5 style="margin: 1rem 0; font-size: 1.1rem;">S1 Akuntansi | IPK: 3.52</h5>
+                    <p>Mendalami akuntansi biaya, proses penjurnalan transaksi, penyusunan dan analisis laporan keuangan, serta pemahaman dasar perpajakan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification Section (Dipisah & Foto Diperbaiki) -->
+    <section id="certification" class="section">
+        <div class="container">
+            <h3 class="section-heading text-center hidden-element">Lisensi & <span class="text-pink">Sertifikasi</span></h3>
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+                
+                <!-- Sertifikasi ATPI -->
+                <div class="advanced-card hidden-element">
+                    <div class="card-header bg-pink">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4>Asosiasi Teknisi Perpajakan Indonesia (ATPI)</h4>
+                        <span class="badge badge-pink">Sertifikasi Resmi</span>
+                        <h5>Teknisi Perpajakan Madya</h5>
+                        <p>Kompeten dalam administrasi pajak WPOP maupun Badan. Mengelola pemotongan PPh, PPN/PPnBM, serta menguasai aplikasi komputer perpajakan.</p>
+                        
+                        <!-- Class cert-img menggunakan object-fit: contain agar tidak terpotong -->
+                        <img src="img/Sertifikat ATPI.jpeg" alt="Sertifikat ATPI" class="cert-img mt-1" onerror="this.src='https://via.placeholder.com/800x600/f1f2f6/e84393?text=Taruh+sertifikat-atpi.jpg+di+folder+img'">
+                        <img src="img/Sertifikat ATPI Nilai.jpeg" alt="Sertifikat ATPI" class="cert-img mt-1" onerror="this.src='https://via.placeholder.com/800x600/f1f2f6/e84393?text=Taruh+sertifikat-atpi.jpg+di+folder+img'">
+                    </div>
+                </div>
+
+                <!-- Brevet -->
+                <div class="advanced-card hidden-element delay-1">
+                    <div class="card-header bg-blue">
+                        <i class="fas fa-stamp"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4>Pelatihan Brevet A & B</h4>
+                        <span class="badge">Lembaga Manajemen & Akuntansi UGJ</span>
+                        <h5>Keahlian Perpajakan Komprehensif</h5>
+                        <p>Menguasai KUP, perhitungan PPh OP & Badan, regulasi PPN & PPnBM, serta aplikasi praktik Akuntansi Perpajakan dan e-SPT.</p>
+                        
+                        <!-- Class cert-img menggunakan object-fit: contain agar tidak terpotong -->
+                        <img src="img/Sertifikat Brevet A & B.jpeg" alt="Sertifikat Brevet" class="cert-img mt-1" onerror="this.src='https://via.placeholder.com/800x600/f1f2f6/1e3799?text=Taruh+sertifikat-brevet.jpg+di+folder+img'">
+                        <img src="img/Sertifikst Brevet A & B Nilai.jpeg" alt="Sertifikat Brevet" class="cert-img mt-1" onerror="this.src='https://via.placeholder.com/800x600/f1f2f6/1e3799?text=Taruh+sertifikat-brevet.jpg+di+folder+img'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="experience" class="section bg-light">
+        <div class="container">
+            <h3 class="section-heading text-center hidden-element">Jejak <span class="text-blue">Karir & Magang</span></h3>
+            
+            <div class="timeline">
+                <!-- Kerja -->
+                <div class="timeline-item hidden-element">
+                    <div class="timeline-dot bg-pink"></div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">Staff Accounting</h4>
+                        <h5 class="timeline-company">PT. Sun Bright Lestari, Indramayu (Juni 2026 - Sekarang)</h5>
+                        <ul class="timeline-list">
+                            <li>Menyusun jurnal pembayaran untuk aktivitas transaksi ekspor-impor perusahaan.</li>
+                            <li>Melakukan data entry transaksi pembayaran menggunakan aplikasi Tipton.</li>
+                            <li>Membuat laporan serta mengelola sirkulasi dana Kas Kecil (Petty Cash).</li>
+                        </ul>
+                        <img src="img/PT Sun Bright Lestari.png" alt="Dokumentasi Sun Bright Lestari" class="content-img mt-1" onerror="this.src='https://via.placeholder.com/600x300/f1f2f6/636e72?text=Taruh+PT Sun Bright Lestari.png+di+folder+img'">
+                        <img src="img/Sertifikat Sun Bright Lestari.png" alt="Dokumentasi Jasa Marga" class="content-img mt-1" onerror="this.src='https://via.placeholder.com/600x300/f1f2f6/636e72?text=Taruh+magang-jasamarga.jpg+di+folder+img'">
+                    </div>
+                </div>
+
+                <!-- Magang Jasa Marga -->
+                <div class="timeline-item hidden-element">
+                    <div class="timeline-dot bg-blue"></div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">Magang Keuangan & Administrasi</h4>
+                        <h5 class="timeline-company">PT Jasa Marga (Persero) Tbk. (Maret 2026 - Mei 2026)</h5>
+                        <ul class="timeline-list">
+                            <li>Menyusun laporan keuangan untuk Kas Kecil (Petty Cash) dan Kas Besar.</li>
+                            <li>Melakukan entri data laporan operasional penggunaan BBM.</li>
+                            <li>Mengelola administrasi kearsipan surat masuk dan keluar.</li>
+                        </ul>
+                        <!-- Foto Dokumentasi -->
+                        <img src="img/Magang Jasa Marga.png" alt="Dokumentasi Jasa Marga" class="content-img mt-1" onerror="this.src='https://via.placeholder.com/600x300/f1f2f6/636e72?text=Taruh+magang-jasamarga.jpg+di+folder+img'">
+                        <img src="img/Magang Jasa Marga 2.png" alt="Dokumentasi Jasa Marga" class="content-img mt-1" onerror="this.src='https://via.placeholder.com/600x300/f1f2f6/636e72?text=Taruh+magang-jasamarga.jpg+di+folder+img'">
+                        <img src="img/Magang Jasa Marga 3.png" alt="Dokumentasi Jasa Marga" class="content-img mt-1" onerror="this.src='https://via.placeholder.com/600x300/f1f2f6/636e72?text=Taruh+magang-jasamarga.jpg+di+folder+img'">
+                    </div>
+                </div>
+
+                <!-- Magang KAI -->
+                <div class="timeline-item hidden-element">
+                    <div class="timeline-dot bg-blue"></div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">Magang Administrasi & Keuangan</h4>
+                        <h5 class="timeline-company">PT. Kereta Api Indonesia - DAOP 3 Cirebon (Agustus 2025)</h5>
+                        <ul class="timeline-list">
+                            <li>Mengelola pengarsipan dokumen administrasi perusahaan.</li>
+                            <li>Menyusun laporan keuangan Kas Kecil (Petty Cash).</li>
+                            <li>Memproses data entry tagihan program CSR.</li>
+                        </ul>
+                        <!-- Foto Dokumentasi -->
+                        <img src="img/Magang KAI.png" alt="Dokumentasi KAI" class="content-img mt-1" onerror="this.src='https://via.placeholder.com/600x300/f1f2f6/636e72?text=Taruh+magang-kai.jpg+di+folder+img'">
+                        <img src="img/Magang KAI 2.png" alt="Dokumentasi KAI" class="content-img mt-1" onerror="this.src='https://via.placeholder.com/600x300/f1f2f6/636e72?text=Taruh+magang-kai.jpg+di+folder+img'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organization Grid Section -->
+    <section id="organization" class="section">
+        <div class="container">
+            <h3 class="section-heading text-center hidden-element">Pengalaman <span class="text-pink">Organisasi Kepanitiaan</span></h3>
+            
+            <div class="bento-grid">
+                <div class="bento-item hidden-element">
+                    <h4>HIMATANSI - Kesma</h4>
+                    <span class="role text-pink">Staff Kesejahteraan Mahasiswa (Feb 2023 - Jan 2024)</span>
+                    <p>Mengakomodasi aspirasi mahasiswa Akuntansi UGJ, mengadvokasi isu kesejahteraan, serta memfasilitasi komunikasi dua arah.</p>
+                </div>
+                
+                <div class="bento-item hidden-element">
+                    <h4>Bazaar Buku UGJ</h4>
+                    <span class="role text-blue">Ketua Pelaksana (April 2023)</span>
+                    <p>Memimpin dan merancang konsep "More Books, More Knowledge". Membangun partnership dengan vendor penerbit.</p>
+                </div>
+
+                <div class="bento-item hidden-element">
+                    <h4>Mahasiswa Akuntansi Bersatu (I)</h4>
+                    <span class="role text-pink">Sekretaris (Juni 2023)</span>
+                    <p>Mengelola administrasi kepanitiaan mulai dari proposal, LPJ, menyusun notulensi aspirasi, dan mengontrol alur surat-menyurat.</p>
+                </div>
+                
+                <div class="bento-item hidden-element">
+                    <h4>Seminar Rumpun Akuntansi</h4>
+                    <span class="role text-blue">Humas (Juli 2023)</span>
+                    <p>Mengeksekusi strategi publikasi seminar, mengelola komunikasi dengan pemateri, serta merespons alur registrasi peserta.</p>
+                </div>
+
+                <div class="bento-item hidden-element">
+                    <h4>Mahasiswa Akuntansi Bersatu (II)</h4>
+                    <span class="role text-pink">Bendahara (Oktober 2023)</span>
+                    <p>Merancang Rencana Anggaran Biaya (RAB) dialog mahasiswa, mengelola pengeluaran kas, serta menyajikan laporan keuangan.</p>
+                </div>
+
+                <div class="bento-item hidden-element">
+                    <h4>Company Visit</h4>
+                    <span class="role text-blue">Humas PT Cirebon Electric Power (Oktober 2023)</span>
+                    <p>Narahubung utama perizinan, menyusun dokumen kunjungan, serta mengoordinasikan itinerary dan kebutuhan logistik peserta.</p>
+                </div>
+
+                <div class="bento-item hidden-element">
+                    <h4>Accounting Recognition Program</h4>
+                    <span class="role text-pink">Bendahara (November 2023)</span>
+                    <p>Menyusun RAB orientasi, menghimpun dana registrasi, mencatat transaksi, dan menyusun Laporan Pertanggungjawaban (LPJ).</p>
+                </div>
+
+                <div class="bento-item hidden-element">
+                    <h4>Bakti Sosial</h4>
+                    <span class="role text-blue">Humas Pesantren Kp. Qur'an Harjamukti (Des 2023)</span>
+                    <p>Mengelola birokrasi perizinan pesantren, mempromosikan penggalangan donasi, dan menjembatani informasi penyaluran bantuan.</p>
+                </div>
+
+                <div class="bento-item hidden-element">
+                    <h4>HIMATANSI - Humas & Delegasi</h4>
+                    <span class="role text-pink">Staff Humas & PJ Delegasi (Jan 2024 - Feb 2025)</span>
+                    <p>Membangun relasi dengan media partner, menyusun materi publikasi, menyeleksi delegasi, dan mengelola komunikasi resmi.</p>
+                </div>
+
+                <div class="bento-item hidden-element span-3 text-center" style="grid-column: 1 / -1;">
+                    <h4>ACCOFEST 3.0</h4>
+                    <span class="role text-blue">Humas (Mei 2024 - Juli 2024)</span>
+                    <p>Merancang strategi komunikasi publik terintegrasi HUT Prodi, negosiator partnership dengan sponsor dan bintang tamu, serta mengelola saluran informasi festival.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container text-center hidden-element">
+            <h3 class="section-heading">Mari Berkolaborasi</h3>
+            <p class="contact-desc">Mencari profesional akuntansi yang teliti, tersertifikasi, dan komunikatif? Mari berdiskusi lebih lanjut mengenai peluang kerjasama atau karir.</p>
+            
+            <div class="contact-wrapper">
+                <div class="contact-card" onclick="window.open('https://wa.me/6285656523882', '_blank')">
+                    <i class="fab fa-whatsapp contact-icon text-pink"></i>
+                    <h4>WhatsApp</h4>
+                    <p>+62 856-5652-3882</p>
+                    <span class="click-hint">Klik untuk chat langsung</span>
+                </div>
+                
+                <div class="contact-card" onclick="window.open('https://gmail.com')">
+                    <i class="fas fa-envelope contact-icon text-blue"></i>
+                    <h4>Email Profesional</h4>
+                    <p>restawidyainar02@gmail.com</p>
+                    <span class="click-hint">Klik untuk menyalin</span>
+                </div>
+            </div>
+            
+            <!-- Notifikasi interaktif -->
+            <div id="toast" class="toast-notification">Berhasil disalin ke clipboard!</div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 | Resta Onistriya Widya Inar.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
