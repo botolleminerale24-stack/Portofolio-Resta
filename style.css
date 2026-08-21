@@ -186,3 +186,67 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px; /* Biar judul section gak ketutup navbar atas */
 }
+
+/* --- ELEMEN DEKORASI BACKGROUND --- */
+.bg-blob {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(90px);
+    z-index: -1; /* Biar posisinya di belakang konten */
+    opacity: 0.3;
+    animation: float 6s infinite alternate ease-in-out;
+}
+.blob-blue {
+    width: 300px; height: 300px;
+    background: #3b82f6; /* Biru */
+    top: -50px; left: -100px;
+}
+.blob-pink {
+    width: 250px; height: 250px;
+    background: #ec4899; /* Pink */
+    bottom: -50px; right: -50px;
+}
+@keyframes float {
+    0% { transform: translateY(0px) scale(1); }
+    100% { transform: translateY(40px) scale(1.1); }
+}
+
+/* --- TAMPILAN SMARTPHONE (RESPONSIVE UI) --- */
+@media screen and (max-width: 768px) {
+    /* Rapihin Kotak Bento & Section */
+    .bento-grid {
+        grid-template-columns: 1fr; /* Paksa jadi 1 kolom ke bawah */
+        gap: 15px;
+    }
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+    
+    /* Rapihin Timeline Pengalaman */
+    .timeline-item {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 0;
+        border-left: none;
+    }
+    .timeline-dot {
+        position: static;
+        margin: 0 auto 15px auto;
+    }
+    
+    /* Sesuaikan Ukuran Teks */
+    h1, .section-heading { font-size: 1.8rem; }
+    
+    /* Rapihin Navbar di HP */
+    .glass-nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .glass-nav ul {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+}
