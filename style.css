@@ -187,28 +187,26 @@ html {
     scroll-padding-top: 80px; /* Biar judul section gak ketutup navbar atas */
 }
 
-/* --- ELEMEN DEKORASI BACKGROUND --- */
+/* --- ELEMEN DEKORASI BACKGROUND (VERSI RINGAN) --- */
 .bg-blob {
     position: fixed;
-    border-radius: 50%;
-    filter: blur(90px);
-    z-index: -1; /* Biar posisinya di belakang konten */
-    opacity: 0.3;
-    animation: float 6s infinite alternate ease-in-out;
+    z-index: -1;
+    opacity: 0.5;
+    animation: float 8s infinite alternate ease-in-out;
 }
 .blob-blue {
     width: 300px; height: 300px;
-    background: #3b82f6; /* Biru */
+    background: radial-gradient(circle, rgba(59,130,246,0.6) 0%, rgba(59,130,246,0) 70%);
     top: -50px; left: -100px;
 }
 .blob-pink {
     width: 250px; height: 250px;
-    background: #ec4899; /* Pink */
+    background: radial-gradient(circle, rgba(236,72,153,0.6) 0%, rgba(236,72,153,0) 70%);
     bottom: -50px; right: -50px;
 }
 @keyframes float {
     0% { transform: translateY(0px) scale(1); }
-    100% { transform: translateY(40px) scale(1.1); }
+    100% { transform: translateY(30px) scale(1.05); }
 }
 
 /* --- TAMPILAN SMARTPHONE (RESPONSIVE UI) --- */
