@@ -181,3 +181,20 @@ footer { background: var(--clr-blue); color: white; padding: 2rem 0; }
     .nav-links { display: none; }
     .bento-grid { grid-template-columns: 1fr; }
 }
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Biar judul section gak ketutup navbar atas */
+}
+
+/* Animasi Muncul Per Section */
+.section {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.section.muncul {
+    opacity: 1;
+    transform: translateY(0);
+}
