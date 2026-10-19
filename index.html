@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Elemen Dekorasi Background (Udah dipindah ke paling atas) -->
+    <div class="bg-blob blob-blue"></div>
+    <div class="bg-blob blob-pink"></div>
+
     <!-- Navbar dengan efek Glassmorphism -->
     <header class="glass-nav">
         <nav class="container">
@@ -43,13 +47,10 @@
         </div>
     </section>
     
-    
-    <!-- About Section (DENGAN FOTO PROFIL) -->
+    <!-- About Section -->
     <section id="about" class="section">
         <div class="container layout-grid-about">
-            <!-- Tempat Foto Profil -->
             <div class="about-image-wrapper hidden-element">
-                <!-- Pastikan foto profil bernama profil.jpg ditaruh di folder img -->
                 <img src="IMG/Foto Profil.jpg" alt="Foto Resta" class="profile-img" onerror="this.src='https://via.placeholder.com/400x500/1e3799/ffffff?text=Taruh+profil.jpg+di+folder+img'">
                 <div class="image-backdrop"></div>
             </div>
@@ -70,7 +71,7 @@
         </div>
     </section>
 
-    <!-- Education Section (Dipisah) -->
+    <!-- Education Section -->
     <section id="education" class="section bg-light">
         <div class="container">
             <h3 class="section-heading text-center hidden-element">Latar Belakang <span class="text-blue">Pendidikan</span></h3>
@@ -89,13 +90,12 @@
         </div>
     </section>
 
-    <!-- Certification Section (Dipisah & Foto Diperbaiki) -->
+    <!-- Certification Section -->
     <section id="certification" class="section">
         <div class="container">
             <h3 class="section-heading text-center hidden-element">Lisensi & <span class="text-pink">Sertifikasi</span></h3>
             <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
                 
-                <!-- Sertifikasi ATPI -->
                 <div class="advanced-card hidden-element">
                     <div class="card-header bg-pink">
                         <i class="fas fa-certificate"></i>
@@ -105,14 +105,11 @@
                         <span class="badge badge-pink">Sertifikasi Resmi</span>
                         <h5>Teknisi Perpajakan Madya</h5>
                         <p>Kompeten dalam administrasi pajak WPOP maupun Badan. Mengelola pemotongan PPh, PPN/PPnBM, serta menguasai aplikasi komputer perpajakan.</p>
-                        
-                        <!-- Class cert-img menggunakan object-fit: contain agar tidak terpotong -->
                         <img src="IMG/Sertifikat ATPI.jpeg" alt="Sertifikat ATPI" class="cert-img mt-1" onerror="this.src='https://via.placeholder.com/800x600/f1f2f6/e84393?text=Taruh+sertifikat-atpi.jpg+di+folder+img'">
                         <img src="IMG/Sertifikat ATPI Nilai.jpeg" alt="Sertifikat ATPI" class="cert-img mt-1" onerror="this.src='https://via.placeholder.com/800x600/f1f2f6/e84393?text=Taruh+sertifikat-atpi.jpg+di+folder+img'">
                     </div>
                 </div>
 
-                <!-- Brevet -->
                 <div class="advanced-card hidden-element delay-1">
                     <div class="card-header bg-blue">
                         <i class="fas fa-stamp"></i>
@@ -122,8 +119,6 @@
                         <span class="badge">Lembaga Manajemen & Akuntansi UGJ</span>
                         <h5>Keahlian Perpajakan Komprehensif</h5>
                         <p>Menguasai KUP, perhitungan PPh OP & Badan, regulasi PPN & PPnBM, serta aplikasi praktik Akuntansi Perpajakan dan e-SPT.</p>
-                        
-                        <!-- Class cert-img menggunakan object-fit: contain agar tidak terpotong -->
                         <img src="IMG/Sertifikat Brevet A & B.jpeg" alt="Sertifikat Brevet" class="cert-img mt-1" onerror="this.src='https://via.placeholder.com/800x600/f1f2f6/1e3799?text=Taruh+sertifikat-brevet.jpg+di+folder+img'">
                         <img src="IMG/Sertifikst Brevet A & B Nilai.jpeg" alt="Sertifikat Brevet" class="cert-img mt-1" onerror="this.src='https://via.placeholder.com/800x600/f1f2f6/1e3799?text=Taruh+sertifikat-brevet.jpg+di+folder+img'">
                     </div>
@@ -138,7 +133,6 @@
             <h3 class="section-heading text-center hidden-element">Jejak <span class="text-blue">Karir & Magang</span></h3>
             
             <div class="timeline">
-                <!-- Kerja -->
                 <div class="timeline-item hidden-element">
                     <div class="timeline-dot bg-pink"></div>
                     <div class="timeline-content">
@@ -154,7 +148,6 @@
                     </div>
                 </div>
 
-                <!-- Magang Jasa Marga -->
                 <div class="timeline-item hidden-element">
                     <div class="timeline-dot bg-blue"></div>
                     <div class="timeline-content">
@@ -165,7 +158,6 @@
                             <li>Melakukan entri data laporan operasional penggunaan BBM.</li>
                             <li>Mengelola administrasi kearsipan surat masuk dan keluar.</li>
                         </ul>
-                        <!-- Foto Dokumentasi -->
                         <img src="IMG/Magang Jasa Marga.png" alt="Dokumentasi Jasa Marga" class="content-img mt-1" onerror="this.src='https://via.placeholder.com/600x300/f1f2f6/636e72?text=Taruh+magang-jasamarga.jpg+di+folder+img'">
                         <img src="IMG/Magang Jasa Marga 2.png" alt="Dokumentasi Jasa Marga" class="content-img mt-1" onerror="this.src='https://via.placeholder.com/600x300/f1f2f6/636e72?text=Taruh+magang-jasamarga.jpg+di+folder+img'">
                         <img src="IMG/Magang Jasa Marga 3.png" alt="Dokumentasi Jasa Marga" class="content-img mt-1" onerror="this.src='https://via.placeholder.com/600x300/f1f2f6/636e72?text=Taruh+magang-jasamarga.jpg+di+folder+img'">
@@ -182,13 +174,11 @@
                             <li>Melakukan riset dan analisis SWOT untuk memetakan potensi pasar produk.</li>
                             <li>Mengelola dan mengontrol arus kas keuangan operasional selama program berjalan.</li>
                         </ul>
-                        <!-- Opsional: Kalau Resta punya foto pas MBKM, taruh di folder img dengan nama magang-mbkm.jpg -->
                         <img src="IMG/Sertifikat MBKM.png" alt="Dokumentasi MBKM" class="content-img mt-1" onerror="this.style.display='none'">
                         <img src="IMG/Sertifikat MBKM 2.png" alt="Dokumentasi MBKM" class="content-img mt-1" onerror="this.style.display='none'">
                     </div>
                 </div>
 
-                <!-- Magang KAI -->
                 <div class="timeline-item hidden-element">
                     <div class="timeline-dot bg-blue"></div>
                     <div class="timeline-content">
@@ -199,7 +189,6 @@
                             <li>Menyusun laporan keuangan Kas Kecil (Petty Cash).</li>
                             <li>Memproses data entry tagihan program CSR.</li>
                         </ul>
-                        <!-- Foto Dokumentasi -->
                         <img src="IMG/Magang KAI.png" alt="Dokumentasi KAI" class="content-img mt-1" onerror="this.src='https://via.placeholder.com/600x300/f1f2f6/636e72?text=Taruh+magang-kai.jpg+di+folder+img'">
                         <img src="IMG/Magang KAI 2.png" alt="Dokumentasi KAI" class="content-img mt-1" onerror="this.src='https://via.placeholder.com/600x300/f1f2f6/636e72?text=Taruh+magang-kai.jpg+di+folder+img'">
                     </div>
@@ -305,15 +294,8 @@
                     <span class="click-hint">Klik untuk kunjungi profil</span>
                 </div>
             </div>
-
-            <!-- Elemen Dekorasi Background -->
-            <div class="bg-blob blob-blue"></div>
-            <div class="bg-blob blob-pink"></div>
-        
-            <!-- Navbar dengan efek Glassmorphism -->
-            <header class="glass-nav">
             
-            <!-- Notifikasi interaktif -->
+            <!-- Notifikasi interaktif (Kodingan kotor udah dihapus dari sini) -->
             <div id="toast" class="toast-notification">Berhasil disalin ke clipboard!</div>
         </div>
     </section>
